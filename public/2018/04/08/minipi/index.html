@@ -9,12 +9,12 @@
   <title>如何自制一块“树莓派”--DIY ARM-Linux卡片电脑 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近准备拿树莓派做一些AI相关好玩的东西，但是对这块别人设计的板子总感觉不是很满意。一方面树莓派是面向广大用户的，所以定制化不够，板子形状尺寸配置外设都无法达到理想的要求；另一方面树莓派的性能也确实相对捉急，毕竟成本摆在那里，为了普及这块卡片电脑，不可能用上太贵的SOC（树莓派上面的博通CPU是专门供应给树莓派的）。于是为了满足个人的强迫症，也为了学习一下高速PCB的设计制造，决定自己画块AR">
-<meta name="keywords" content="项目,ARM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何自制一块“树莓派”--DIY ARM-Linux卡片电脑">
 <meta property="og:url" content="http://pengzhihui.xyz/2018/04/08/minipi/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
 <meta property="og:description" content="最近准备拿树莓派做一些AI相关好玩的东西，但是对这块别人设计的板子总感觉不是很满意。一方面树莓派是面向广大用户的，所以定制化不够，板子形状尺寸配置外设都无法达到理想的要求；另一方面树莓派的性能也确实相对捉急，毕竟成本摆在那里，为了普及这块卡片电脑，不可能用上太贵的SOC（树莓派上面的博通CPU是专门供应给树莓派的）。于是为了满足个人的强迫症，也为了学习一下高速PCB的设计制造，决定自己画块AR">
+<meta property="og:locale">
 <meta property="og:image" content="http://pengzhihui.xyz/img/MiniPi0.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/MiniPi12.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/MiniPi1.jpg">
@@ -32,10 +32,12 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/MiniPi16.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/MiniPi17.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/MiniPi4.jpg">
-<meta property="og:updated_time" content="2020-03-01T10:37:01.000Z">
+<meta property="article:published_time" content="2018-04-08T13:32:25.000Z">
+<meta property="article:modified_time" content="2022-04-22T04:39:04.599Z">
+<meta property="article:author" content="稚晖的个人站">
+<meta property="article:tag" content="项目">
+<meta property="article:tag" content="ARM">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何自制一块“树莓派”--DIY ARM-Linux卡片电脑">
-<meta name="twitter:description" content="最近准备拿树莓派做一些AI相关好玩的东西，但是对这块别人设计的板子总感觉不是很满意。一方面树莓派是面向广大用户的，所以定制化不够，板子形状尺寸配置外设都无法达到理想的要求；另一方面树莓派的性能也确实相对捉急，毕竟成本摆在那里，为了普及这块卡片电脑，不可能用上太贵的SOC（树莓派上面的博通CPU是专门供应给树莓派的）。于是为了满足个人的强迫症，也为了学习一下高速PCB的设计制造，决定自己画块AR">
 <meta name="twitter:image" content="http://pengzhihui.xyz/img/MiniPi0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
@@ -80,7 +82,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -94,10 +96,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -156,10 +156,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -233,6 +231,8 @@ var _hmt = _hmt || [];
         <p><img src="/img/MiniPi0.jpg" alt="加载失败,请刷新"></p>
 <blockquote>
 <p>最近准备拿树莓派做一些AI相关好玩的东西，但是对这块别人设计的板子总感觉不是很满意。一方面树莓派是面向广大用户的，所以定制化不够，板子形状尺寸配置外设都无法达到理想的要求；另一方面树莓派的性能也确实相对捉急，毕竟成本摆在那里，为了普及这块卡片电脑，不可能用上太贵的SOC（树莓派上面的博通CPU是专门供应给树莓派的）。于是为了满足个人的强迫症，也为了学习一下高速PCB的设计制造，决定自己画块ARM核心板玩~</p>
+</blockquote>
+<blockquote>
 <p>板子的原理图设计和PCB Layout已经完成了，正在发往厂家进行PCB加工。这里吐槽一下，像这种多层精密PCB板要找到合适的厂家打个样（不是批量）还真是不容易。。。淘宝上翻了一遍PCB打样的厂家，没有一家能做0.3mm pitch的BGA板；听说嘉立创最近工艺升级，于是去充了个值把板子发过去试试看，第一次审核通过，第二次准备加工的时候，接到电话说你的板子我们做不了，0.2mm的过孔超过工艺范围，是的加钱也做不了…不过幸运的是最终还是找到一个可以做的厂家，当然价格也是相当的不亲民了~</p>
 </blockquote>
 <p><img src="/img/MiniPi12.jpg" alt="加载失败,请刷新"></p>
@@ -240,7 +240,9 @@ var _hmt = _hmt || [];
 <p> 板子用的全志Cortex A53四核CPU，主频1.5GHz，六层DDR3内存，mini-PCIE尺寸，性能应该是完全超过树莓派了~等板子加工好了下一步移植uboot和Linux-kernel，应该是目前为止最小的Linux开发板了。板子引出了spi，iic，uart等引脚资源，后面会做一个arduino兼容的底板。</p>
 </blockquote>
 <p><img src="/img/MiniPi1.jpg" alt="加载失败,请刷新"></p>
-<a id="more"></a>
+<span id="more"></span>
+
+
 <h2 id="2018-4-18"><a href="#2018-4-18" class="headerlink" title="2018.4.18"></a><strong>2018.4.18</strong></h2><blockquote>
 <ul>
 <li>加工的核心板PCB到了，迅速尝试焊了几片~由于是第一次手工焊接BGA的芯片，而且还是0.3mm pitch的BGA，所以一开始并没有太大的把握。</li>
@@ -251,7 +253,8 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>根据网上看到的BGA焊接经验，一般是先对芯片植锡球，也就是利用钢网对准焊点后，将锡球（网上很好买，分为各种尺寸，一般按万颗计算的）撒到芯片上，然后加热化锡，这样芯片上的的锡球就成为连接PCB和芯片的导线了，这也是BGA（Ball Grid Array，焊球阵列封装）的意思。</p>
 </blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">植锡球的具体操作可以参考下图：</div></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">植锡球的具体操作可以参考下图：</span><br></pre></td></tr></table></figure>
+
 <p><img src="/img/MiniPi5.jpg" alt="加载失败,请刷新"></p>
 <blockquote>
 <ul>
@@ -262,7 +265,7 @@ var _hmt = _hmt || [];
 <p><img src="/img/MiniPi6.jpg" alt="加载失败,请刷新"></p>
 <blockquote>
 <ul>
-<li>我采用的焊接方法是，先把除BGA以外别的器件都焊好（主要是电源电路，和一些外设），然后上电测试电压（5V、3.3V、1.2V、CPUX的1.3/1.4V）是否正常，正常的话就说明板子成功了一半~因为PCB的加工至少应该是没有问题的（虽然PCB发货前会进行飞针测试，但是只保证通路，短路是很难检查出来的）。</li>
+<li>我采用的焊接方法是，先把除BGA以外别的器件都焊好（主要是电源电路，和一些外设），然后上电测试电压（5V、3.3V、1.2V、CPUX的1.3&#x2F;1.4V）是否正常，正常的话就说明板子成功了一半~因为PCB的加工至少应该是没有问题的（虽然PCB发货前会进行飞针测试，但是只保证通路，短路是很难检查出来的）。</li>
 <li>很幸运我这块板子没有发现任何问题，这又说明了我的走线和规则设定是ok的。</li>
 </ul>
 </blockquote>
@@ -288,6 +291,8 @@ var _hmt = _hmt || [];
 <li>第一次进行BGA的手工焊接：就算PCB没问题，焊接也是个大问题，一旦焊接完发现板子不工作，很难排查是哪里的原因</li>
 </ul>
 <p>好在以上所有问题都随着板子上那颗可爱的LED闪起来而得到了完美的回答哈哈~</p>
+</blockquote>
+<blockquote>
 <p>硬件正常工作，下一步就是软件的移植工作了，U-BOOT和Linux内核的移植和编译在之前等PCB加工的时候已经基本完成，将系统写入SD卡后，插上板子，上电成功进入内核~文件系统使用的Ubuntu16.04，Debian系的最佳选择，跟树莓派也基本完全兼容。下图为通过板载的USB串口进行SSH登陆的效果↓</p>
 </blockquote>
 <p><img src="/img/MiniPi10.jpg" alt="加载失败,请刷新"></p>
@@ -306,9 +311,11 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>同时底板也板载了一块Mega32U4芯片，烧写Arduino Micro的Bootloader之后可以作为Arduino使用，其中串口和I2C接口都是可以和核心板相连的，用于两者通信，当然核心板上也能直接编译程序给Arduino下载啦</p>
 </blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">核心板和底板全家福↓</div></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">核心板和底板全家福↓</span><br></pre></td></tr></table></figure>
+
 <p><img src="/img/MiniPi15.jpg" alt="加载失败,请刷新"></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">最终板子和树莓派的尺寸对比，大概只有一半的大小，还多了很多外设↓</div></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最终板子和树莓派的尺寸对比，大概只有一半的大小，还多了很多外设↓</span><br></pre></td></tr></table></figure>
+
 <p><img src="/img/MiniPi16.jpg" alt="加载失败,请刷新"></p>
 <blockquote>
 <p>由于一般Linux都直接用SSH或者远程桌面登陆，所以底板上没接出HDMI接口（另一个原因是为了关闭GPU降低功耗和发热），所以最好需要一个板载的小屏幕来显示一些信息，比如CPU使用率、温度、IP地址等等。这里我选用一块很常用的OLED12864屏幕，尺寸很小巧显示也很漂亮，通过I2C接口驱动，接线也相当简洁，即插即用。</p>
@@ -317,10 +324,13 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>用Linux驱动OLED，和用单片机（比如Arduino）驱动一块OLED有啥不同？那就很有意思啦，首先Linux是一个完整的桌面级操作系统，很多算法（像图像处理，网络应用）都是可以直接移植运行的，所以不会出现像单片机上资源匮乏，每显示一副图片甚至一段中文，都需要事先用PC端软件开好模，再存到单片机的flash里面再下载运行这种情况（因为这Linux板子本身就是个电脑了哈哈）；其次Linux是可以多任务的，也就是说可以很方便地将OLED的显示和其他应用结合起来，将屏幕作为一个展示内容的很好工具</p>
 </blockquote>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">例如，下面这个视频，就演示了如何实时解码一段视频（著名的<span class="keyword">Bad </span>Apple），并经过图像处理后通过OLED来播放↓</div></pre></td></tr></table></figure>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMzU3ODg0ODQwNA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe></div> 
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例如，下面这个视频，就演示了如何实时解码一段视频（著名的Bad Apple），并经过图像处理后通过OLED来播放↓</span><br></pre></td></tr></table></figure>
 
-<p><br></p>
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XMzU3ODg0ODQwNA" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe></div> 
+
+<br/>
+
 <blockquote>
 <p>另外，不知道intel啥时候肯放出Movidius芯片的bsp，就可以在板子上整合这颗VPU做神经网络加速了，到时候移植几个神经网络算法设计个迷你AI机器人耍耍 ~</p>
 </blockquote>
@@ -523,7 +533,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -623,11 +633,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -639,6 +649,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -647,15 +661,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -663,11 +669,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -683,11 +693,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

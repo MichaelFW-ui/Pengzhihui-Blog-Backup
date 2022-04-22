@@ -8,13 +8,13 @@
   <link rel="dns-prefetch" href="http://pengzhihui.xyz">
   <title>嵌入式AI从入门到放肆【K210篇】-- 硬件与环境 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。 由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下“推理一个实用神经网络最低需要什么样的算力”这个问题。项目的演示视频如下：          基于Cortex-M的M4CNN模块   在那个项目中，我成功在主频只有不到100MHz，sram只有32K的单片机上推理了一个自">
-<meta name="keywords" content="教程">
+  <meta name="description" content="前言关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。 由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下“推理一个实用神经网络最低需要什么样的算力”这个问题。项目的演示视频如下：               基于Cortex-M的M4CNN模块   在那个项目中，我成功在主频只有不到100MHz，sram只有32K的单片机上推">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嵌入式AI从入门到放肆【K210篇】-- 硬件与环境">
 <meta property="og:url" content="http://pengzhihui.xyz/2019/09/13/k210-1/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
-<meta property="og:description" content="前言关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。 由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下“推理一个实用神经网络最低需要什么样的算力”这个问题。项目的演示视频如下：          基于Cortex-M的M4CNN模块   在那个项目中，我成功在主频只有不到100MHz，sram只有32K的单片机上推理了一个自">
+<meta property="og:description" content="前言关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。 由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下“推理一个实用神经网络最低需要什么样的算力”这个问题。项目的演示视频如下：               基于Cortex-M的M4CNN模块   在那个项目中，我成功在主频只有不到100MHz，sram只有32K的单片机上推">
+<meta property="og:locale">
 <meta property="og:image" content="http://pengzhihui.xyz/img/k210-1-1.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/k210-1-2.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/k210-1-3.jpg">
@@ -32,10 +32,11 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/k210-1-15.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/k210-1-16.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/k210-1-17.jpg">
-<meta property="og:updated_time" content="2020-03-18T08:53:34.223Z">
+<meta property="article:published_time" content="2019-09-13T14:31:20.000Z">
+<meta property="article:modified_time" content="2022-04-22T04:39:04.592Z">
+<meta property="article:author" content="稚晖的个人站">
+<meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="嵌入式AI从入门到放肆【K210篇】-- 硬件与环境">
-<meta name="twitter:description" content="前言关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。 由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下“推理一个实用神经网络最低需要什么样的算力”这个问题。项目的演示视频如下：          基于Cortex-M的M4CNN模块   在那个项目中，我成功在主频只有不到100MHz，sram只有32K的单片机上推理了一个自">
 <meta name="twitter:image" content="http://pengzhihui.xyz/img/k210-1-1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
@@ -80,7 +81,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -94,10 +95,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -156,10 +155,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -232,11 +229,17 @@ var _hmt = _hmt || [];
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p><strong>关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。</strong></p>
 <p>由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下<code>“推理一个实用神经网络最低需要什么样的算力”</code>这个问题。项目的演示视频如下：</p>
-<div style="height: 0;padding-bottom:65%;position: relative;"><br><iframe width="760" height="510" src="//player.bilibili.com/player.html?aid=61175015&cid=106431941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="position: absolute;height: 105%;width: 100%;"> </iframe><br></div>  
+<div style="height: 0;padding-bottom:65%;position: relative;">
+<iframe width="760" height="510"  
+        src="//player.bilibili.com/player.html?aid=61175015&cid=106431941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="" style="position: absolute;height: 105%;width: 100%;"> </iframe>
+</div>  
 
 
 
-<p><br></p>
+<br />
+
+
+
 <blockquote>
 <p>基于Cortex-M的M4CNN模块 </p>
 </blockquote>
@@ -252,9 +255,9 @@ var _hmt = _hmt || [];
 </blockquote>
 <p>稍微解释一下上图的话就是，由于物理定律限制我们可以认为：在其他条件一定的情况下，性能和功耗肯定成正比，更强的性能意味着更大的功耗也就会产生跟多的热量；而要想提升性能的同时还能保证功耗不变甚至更低的话，就只能改进芯片的架构或者改进制程工艺，这又会带来成本的提高。因而根据不同应用方向，我们可以选择兼顾其中两者的一些硬件平台：</p>
 <ul>
-<li><strong>成本低，性能弱，功耗也低</strong>：代表是各种单片机如STM32/AVR等。</li>
+<li><strong>成本低，性能弱，功耗也低</strong>：代表是各种单片机如STM32&#x2F;AVR等。</li>
 <li><strong>成本低，性能强，但制程不高易发热</strong>：代表是各种低端SoC比如全志的H系列。</li>
-<li><strong>性能强，制程先进，但价格十分不友好，有钱还不一定给卖系列</strong>：代表是现在智能手机上使用的各种旗舰SoC，比如高通骁龙/海思麒麟/苹果A系。</li>
+<li><strong>性能强，制程先进，但价格十分不友好，有钱还不一定给卖系列</strong>：代表是现在智能手机上使用的各种旗舰SoC，比如高通骁龙&#x2F;海思麒麟&#x2F;苹果A系。</li>
 </ul>
 <p>那难道真的就没有三者兼得的芯片平台了吗？</p>
 <p>其实还真有，本篇的主角<strong>K210</strong>就勉强算是一个，这也是我这次选择折腾这个项目的主要原因，接下来请听我仔细分析~</p>
@@ -263,14 +266,14 @@ var _hmt = _hmt || [];
 <p>可不要以为MCU的性能就一定比不上高端SoC，至少在AI计算方面，K210的算力其实是相当可观的。根据嘉楠官方的描述，K210的KPU算力有0.8<em>TOPS</em> ，作为对比，拥有128个CUDA单元GPU的英伟达Jetson Nano的算力是0.47<em>TFLOPS</em> （浮点）；而最新的树莓派4只有不到0.1<em>TFLOPS</em> 。</p>
 <p>当然了，这个性能跟某些旗舰级别的SoC还是有差距的：A76级别的CPU本身就已经很变态，更何况旗舰SoC上面都会搭载用于AI加速的硬件用于异构运算，比如高通的Hexagon DSP、苹果的Neural Engine、华为的达芬奇架构NPU等等，这些NPU在某些应用下甚至能达到与数百W功耗的桌面级GPU接近的算力（顺便提一下GTX1080Ti的双精度浮点算力是11.3 <em>TFLOPS</em> ），可以说是丧心病狂了。</p>
 <blockquote>
-<p>值得注意的是，芯片的算力不一定和模型推理速度成正比，嵌入式AI的另一个核心是inference框架。对于CPU架构来说，是否使用SIMD（ARM从v7开始就支持NEON指令了）、是否使用多核多线程、是否有高效的卷积实现方式、是否有做汇编优化等等都会极大影响模型运行速度；而对DSP/NPU等硬件架构来说，是否对模型进行量化推理、量化的方式、访存的优化等也会有很大影响。</p>
+<p>值得注意的是，芯片的算力不一定和模型推理速度成正比，嵌入式AI的另一个核心是inference框架。对于CPU架构来说，是否使用SIMD（ARM从v7开始就支持NEON指令了）、是否使用多核多线程、是否有高效的卷积实现方式、是否有做汇编优化等等都会极大影响模型运行速度；而对DSP&#x2F;NPU等硬件架构来说，是否对模型进行量化推理、量化的方式、访存的优化等也会有很大影响。</p>
 </blockquote>
 <p><strong>K210的其他参数如下：</strong></p>
 <ul>
-<li>双核 64-bit RISC-V RV64IMAFDC (RV64GC) CPU / 400MHz（可超频到600MHz）</li>
+<li>双核 64-bit RISC-V RV64IMAFDC (RV64GC) CPU &#x2F; 400MHz（可超频到600MHz）</li>
 <li>双精度 FPU</li>
 <li>8MiB 64bit 片上 SRAM（6MiB通用SRAM+2MiB的AI专用SRAM）</li>
-<li>神经网络处理器（KPU） / 0.8TFLOPS</li>
+<li>神经网络处理器（KPU） &#x2F; 0.8TFLOPS</li>
 <li>音频处理器（APU）</li>
 <li>可编程 IO 阵列 (FPIOA)</li>
 <li>双硬件512点16位复数FFT</li>
@@ -289,7 +292,8 @@ var _hmt = _hmt || [];
 <p>可以参考下面链接里的视频演示，相信看完你会爱了的：</p>
 <p>Maix能做哪些事 · MaixPy 文档maixpy.sipeed.com</p>
 <p>好了芯片就吹到这里，下面介绍一下市面上已有的一些K210开发板。</p>
-<a id="more"></a>
+<span id="more"></span>
+
 <h2 id="如何选择开发板"><a href="#如何选择开发板" class="headerlink" title="如何选择开发板"></a><strong>如何选择开发板</strong></h2><p>如果看完上面的介绍对K210产生了兴趣，那么下面我会推荐几款值得入手的K210开发板（如果不小心打了广告麻烦结一下广告费:D）。</p>
 <p>其实我早在去年很早的时候就收到过K210的开发板了，当时是别人送的评测套件，只不过我那时不巧刚毕业，没有太多时间折腾，就一直拖到最近才有空仔细研究。另一方面的原因是，当时K210刚出，软件生态还非常的不成熟，而这个情况现在就好多了，不光有官方的IDE（还是develop版本），甚至还有MicroPython这样的固件的移植，可玩性高了很多，值得折腾一番。</p>
 <p>我个人是打算后面自己设计一块K210开发板的（已经动工了），用于满足我个人的各种<strong>变态要求</strong>（主要是要狗迷你）。不过对于普通玩家而言，BGA的芯片可能不太适合自己DIY，所以可以按我下面的推荐进行购买即可，其中很多都是我亲自买过试用的。</p>
@@ -297,7 +301,7 @@ var _hmt = _hmt || [];
 <p>这个是嘉楠官方的评估板套件，好处呢在于可以和官方IDE中的例程项目无缝对接（当然如果不打算用官方IDE就无所谓了，这个后面软件篇会介绍），IDE中下载的例程都可以直接烧录运行。同时板子上的资源还是挺多的，摄像头、麦克风、LCD屏幕之类的都有，而且可以看到芯片周围有一圈跳线帽，把所有的IO都引出来了，也可以自己取掉跳线帽用杜邦线连接其他硬件。</p>
 <p>缺点也很明显，这板子实在是太爱爱爱大了…..反正我是看不顺眼，虽然买了但是只是用来验证官方给的原理图是否无误，调试的时候还是用其他的板子。</p>
 <p>价格偏贵，对于想自己设计硬件的同学可以购买，其他的就不推荐了。</p>
-<h3 id="2-Widora-AIRV2-BITK210开发板套件"><a href="#2-Widora-AIRV2-BITK210开发板套件" class="headerlink" title="2. Widora-AIRV2/BITK210开发板套件"></a><strong>2. Widora-AIRV2/BITK210开发板套件</strong></h3><p><img src="/img/k210-1-5.jpg" alt="img"></p>
+<h3 id="2-Widora-AIRV2-x2F-BITK210开发板套件"><a href="#2-Widora-AIRV2-x2F-BITK210开发板套件" class="headerlink" title="2. Widora-AIRV2&#x2F;BITK210开发板套件"></a><strong>2. Widora-AIRV2&#x2F;BITK210开发板套件</strong></h3><p><img src="/img/k210-1-5.jpg" alt="img"></p>
 <p>与第一个板子完全相反，这个是目前市面上能买到的最小的k210开发板，而且价格非常实惠。</p>
 <p>这个开发板采用了核心板和底板分离的设计方式，适合那些想自己做硬件但是又无法设计核心电路的同学。核心板使用的封装是NGFF（Mini-PCIE）接口，把芯片最小系统和电源IC集成在了核心板，剩下的功能全部由金手指引出至底板。</p>
 <blockquote>
@@ -322,34 +326,43 @@ var _hmt = _hmt || [];
 <p>这几种开发方式没有优劣之分，有的人喜欢用命令行+vim，有的人喜欢IDE图形界面，也有的人根本不关心编译环境觉得人生苦短只想写Python。</p>
 <p>一般来说越基础的开发方式比如C语言+官方库会自由度越大，能充分发挥出芯片的各种外设功能，但是开发难度比较高，过程很繁琐；越顶层的开发方式比如写脚本，虽然十分地便捷，甚至连下载程序的过程都不需要了，但是程序功能的实现极度依赖于MicroPython的API更新，且很多高级系统功能无法使用。</p>
 <h2 id="1-命令行开发环境"><a href="#1-命令行开发环境" class="headerlink" title="1. 命令行开发环境"></a>1. 命令行开发环境</h2><p>首先说一下，K210的官方SDK支持两种开发模式：<strong>FreeRTOS</strong>和<strong>Standalone（裸机）</strong>。</p>
-<p>具体选择哪种模式取决于个人喜好，如果你之前用过FreeRTOS的话，应该可以很快熟悉SDK的相关接口。我个人对于单片机是更愿意使用裸机开发模式，因为如果要跑OS的话，我会倾向于使用能跑完整Linux系统的开发板，比如这个我自己做的<a href="https://zhuanlan.zhihu.com/p/77585297" target="_blank" rel="external">Linux-Card</a>。</p>
+<p>具体选择哪种模式取决于个人喜好，如果你之前用过FreeRTOS的话，应该可以很快熟悉SDK的相关接口。我个人对于单片机是更愿意使用裸机开发模式，因为如果要跑OS的话，我会倾向于使用能跑完整Linux系统的开发板，比如这个我自己做的<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/77585297">Linux-Card</a>。</p>
 <p><strong>用命令行开发的话建议在Linux环境下（Windows下用命令行总感觉怪怪的），下面介绍环境搭建方式。</strong></p>
 <p><strong>1.1 下载SDK</strong></p>
 <p>在官网的资源下载页面下载相应的SDK：</p>
-<p><a href="https://kendryte.com/downloads/kendryte.com" target="_blank" rel="external">https://kendryte.com/downloads/kendryte.com</a></p>
+<p><a target="_blank" rel="noopener" href="https://kendryte.com/downloads/kendryte.com">https://kendryte.com/downloads/kendryte.com</a></p>
 <p><img src="/img/k210-1-9.jpg" alt="img"></p>
 <p><strong>1.2 安装工具链</strong></p>
 <p>安装 <code>build-essential</code> 以获取 <code>make</code> 工具</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt install build-essential</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install build-essential</span><br></pre></td></tr></table></figure>
+
 <p>安装<code>cmake</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt install cmake</div></pre></td></tr></table></figure>
-<p>从<a href="https://link.zhihu.com/?target=https%3A//kendryte.com/downloads/" target="_blank" rel="external">勘智官网</a>下载Ubuntu版本工具链，放到<code>/opt</code>目录并解压缩。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install cmake</span><br></pre></td></tr></table></figure>
+
+<p>从<a href="https://link.zhihu.com/?target=https://kendryte.com/downloads/">勘智官网</a>下载Ubuntu版本工具链，放到<code>/opt</code>目录并解压缩。</p>
 <p><img src="/img/k210-1-10.jpg" alt="img"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo mv kendryte-toolchain-ubuntu-amd64-8.2.0.tar.gz /opt$ cd /opt$ sudo tar -zxvf kendryte-toolchain-ubuntu-amd64-8.2.0.tar.gz</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo mv kendryte-toolchain-ubuntu-amd64-8.2.0.tar.gz /opt$ cd /opt$ sudo tar -zxvf kendryte-toolchain-ubuntu-amd64-8.2.0.tar.gz</span><br></pre></td></tr></table></figure>
+
 <p>打开<code>~/.bashrc</code>文件，在文件末尾添加如下一行，将 <code>/opt/kendryte-toolchain/bin</code> 目录添加到<em>PATH</em>环境变量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=$PATH:/opt/kendryte-toolchain/bin</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/opt/kendryte-toolchain/bin</span><br></pre></td></tr></table></figure>
+
 <p>使修改生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ source ~/.bashrc</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ source ~/.bashrc</span><br></pre></td></tr></table></figure>
+
 <p><strong>1.3 编译 hello world 工程</strong></p>
-<p>从<a href="https://link.zhihu.com/?target=https%3A//github.com/kendryte/kendryte-standalone-sdk" target="_blank" rel="external">Kendryte Github</a>下载<code>kendryte-standalone-sdk</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:kendryte/kendryte-standalone-sdk.git</div></pre></td></tr></table></figure>
+<p>从<a href="https://link.zhihu.com/?target=https://github.com/kendryte/kendryte-standalone-sdk">Kendryte Github</a>下载<code>kendryte-standalone-sdk</code></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git@github.com:kendryte/kendryte-standalone-sdk.git</span><br></pre></td></tr></table></figure>
+
 <p>hello world工程在<code>kendryte-standalone-sdk/src/hello_world</code>目录下。</p>
 <p>创建一个build目录并进入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ mkdir build &amp;&amp; cd build</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir build &amp;&amp; cd build</span><br></pre></td></tr></table></figure>
+
 <p>运行<em>cmake</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cmake .. -DPROJ=hello_world -DTOOLCHAIN=/opt/kendryte-toolchain/bin</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cmake .. -DPROJ=hello_world -DTOOLCHAIN=/opt/kendryte-toolchain/bin</span><br></pre></td></tr></table></figure>
+
 <p>编译</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ make</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make</span><br></pre></td></tr></table></figure>
+
 <p>会在build目录下生成.bin文件，接下来把这个文件烧录进芯片就ok了。</p>
 <p><strong>1.4 烧录固件</strong></p>
 <p>K210使用的是串口ISP进行下载程序（也支持J-Link调试不过个人感觉不太必要，这里就不介绍了）。</p>
@@ -370,14 +383,15 @@ var _hmt = _hmt || [];
 <li>其他文件(二进制文件)</li>
 </ul>
 <p>比如我们想同时下载名为XXX.bin的固件，以及YYY.bin的其它文件到Flash的0xA00000地址，则需要写一个 flash-list.json 文件，内容如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;version&quot;: &quot;0.1.0&quot;,</div><div class="line">  &quot;files&quot;: [</div><div class="line">    &#123;</div><div class="line">      &quot;address&quot;: 0,</div><div class="line">      &quot;bin&quot;: &quot;XXX.bin&quot;,</div><div class="line">      &quot;sha256Prefix&quot;: true</div><div class="line">    &#125;,</div><div class="line">    &#123;</div><div class="line">      &quot;address&quot;: 0x00A00000,</div><div class="line">      &quot;bin&quot;: &quot;YYY.bin&quot;,</div><div class="line">      &quot;sha256Prefix&quot;: false</div><div class="line">    &#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;version&quot;: &quot;0.1.0&quot;,</span><br><span class="line">  &quot;files&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;address&quot;: 0,</span><br><span class="line">      &quot;bin&quot;: &quot;XXX.bin&quot;,</span><br><span class="line">      &quot;sha256Prefix&quot;: true</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;address&quot;: 0x00A00000,</span><br><span class="line">      &quot;bin&quot;: &quot;YYY.bin&quot;,</span><br><span class="line">      &quot;sha256Prefix&quot;: false</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>注意sha256Prefix选项， 固件需要校验，所以为true， 而其它数据（比如模型数据）不需要，所以为false。</p>
 <p>最后，将这三个文件（XXX.bin， YYY.bin， flash-list.json）压缩成zip文件，然后改后缀名为.kfpkg 即可被烧录工具识别，并按照指定地址烧录到flash。</p>
 <h2 id="2-IDE开发环境"><a href="#2-IDE开发环境" class="headerlink" title="2. IDE开发环境"></a>2. IDE开发环境</h2><p>对于想在Windows下开发的同学，可以使用官方提供的IDE，这也是我最常用的开放方式。</p>
 <p>官方的IDE是基于<strong>Visual Studio Code</strong>开发的，非常好用，<strong>最主要是要有代码自动补全:D</strong>。</p>
 <p><img src="/img/k210-1-12.jpg" alt="img"></p>
 <p><strong>2.1 下载IDE</strong></p>
-<p>在这个<a href="http://kendryte-ide.s3-website.cn-northwest-1.amazonaws.com.cn/" target="_blank" rel="external">地址</a>下载：</p>
+<p>在这个<a target="_blank" rel="noopener" href="http://kendryte-ide.s3-website.cn-northwest-1.amazonaws.com.cn/">地址</a>下载：</p>
 <p><img src="/img/k210-1-13.jpg" alt="img"></p>
 <p>下载完启动会自动联网更新组件，按下面的顺序点击下载官方例程：</p>
 <p><img src="/img/k210-1-14.jpg" alt="img"></p>
@@ -390,26 +404,29 @@ var _hmt = _hmt || [];
 <p>IDE下面这一排按钮其实就是顶部菜单栏的<strong>Kendryte</strong>选项下的内容。</p>
 </blockquote>
 <h2 id="3-MicroPython开发环境"><a href="#3-MicroPython开发环境" class="headerlink" title="3. MicroPython开发环境"></a><strong>3. MicroPython开发环境</strong></h2><p>上面介绍的两种开发环境都是编写代码，然后编译下载，而这里介绍的这种方式只需要下载一次固件，然后就可以用串口的方式进行Python交互，或者也可以把脚本存在SD卡里然后开机运行。</p>
-<p>这种脚本式的交互固件式基于一个叫<a href="https://link.zhihu.com/?target=http%3A//micropython.org/" target="_blank" rel="external">MicroPython</a>的开源项目做的。</p>
+<p>这种脚本式的交互固件式基于一个叫<a href="https://link.zhihu.com/?target=http://micropython.org/">MicroPython</a>的开源项目做的。</p>
 <blockquote>
 <p>MicroPython 是基于 Python3 的语法做的一款解析器，包含了 Python3 的大多数基础语法， 主要运行在性能和内存有限的嵌入式芯片上（最早开始火的是STM32上），注意 Micropython 不包含 Python3 的所有语法。</p>
 </blockquote>
 <p><img src="/img/k210-1-17.jpg" alt="img"></p>
-<p><strong>MaixPy</strong>是将<a href="https://link.zhihu.com/?target=http%3A//micropython.org/" target="_blank" rel="external">Micropython</a>移植到<a href="https://link.zhihu.com/?target=https%3A//kendryte.com/" target="_blank" rel="external">K210</a>的一个项目， 支持 MCU 常规操作， 也集成了机器视觉和麦克风阵列等模块， 以快速开发智能应用。</p>
-<p><a href="https://github.com/sipeed/MaixPy" target="_blank" rel="external">Github</a></p>
+<p><strong>MaixPy</strong>是将<a href="https://link.zhihu.com/?target=http://micropython.org/">Micropython</a>移植到<a href="https://link.zhihu.com/?target=https://kendryte.com/">K210</a>的一个项目， 支持 MCU 常规操作， 也集成了机器视觉和麦克风阵列等模块， 以快速开发智能应用。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/sipeed/MaixPy">Github</a></p>
 <p>Micropython 可以让我们在 K210 上编程更加简单快捷，比如我们需要寻找<strong>I2C</strong>总线上的设备，只需要使用如下代码即可实现：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">from machine import I2C</div><div class="line"></div><div class="line">i2c = I2C(I2C.I2C0, freq=100000, scl=28, sda=29)</div><div class="line">devices = i2c.scan()</div><div class="line">print(devices)</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from machine import I2C</span><br><span class="line"></span><br><span class="line">i2c = I2C(I2C.I2C0, freq=100000, scl=28, sda=29)</span><br><span class="line">devices = i2c.scan()</span><br><span class="line">print(devices)</span><br></pre></td></tr></table></figure>
+
 <p>同样，实现一个<strong>呼吸灯</strong>，只需要如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">from machine import Timer,PWM</div><div class="line">import time</div><div class="line"></div><div class="line">tim = Timer(Timer.TIMER0, Timer.CHANNEL0, mode=Timer.MODE_PWM)</div><div class="line">ch = PWM(tim, freq=500000, duty=50, pin=board_info.LED_G)</div><div class="line">duty=0</div><div class="line">dir = True</div><div class="line">while True:</div><div class="line">    if dir:</div><div class="line">        duty += 10</div><div class="line">    else:</div><div class="line">        duty -= 10</div><div class="line">    if duty&gt;100:</div><div class="line">        duty = 100</div><div class="line">        dir = False</div><div class="line">    elif duty&lt;0:</div><div class="line">        duty = 0</div><div class="line">        dir = True</div><div class="line">    time.sleep(0.05)</div><div class="line">    ch.duty(duty)</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from machine import Timer,PWM</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">tim = Timer(Timer.TIMER0, Timer.CHANNEL0, mode=Timer.MODE_PWM)</span><br><span class="line">ch = PWM(tim, freq=500000, duty=50, pin=board_info.LED_G)</span><br><span class="line">duty=0</span><br><span class="line">dir = True</span><br><span class="line">while True:</span><br><span class="line">    if dir:</span><br><span class="line">        duty += 10</span><br><span class="line">    else:</span><br><span class="line">        duty -= 10</span><br><span class="line">    if duty&gt;100:</span><br><span class="line">        duty = 100</span><br><span class="line">        dir = False</span><br><span class="line">    elif duty&lt;0:</span><br><span class="line">        duty = 0</span><br><span class="line">        dir = True</span><br><span class="line">    time.sleep(0.05)</span><br><span class="line">    ch.duty(duty)</span><br></pre></td></tr></table></figure>
+
 <p><strong>实时拍照</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">import sensor</div><div class="line">import image</div><div class="line">import lcd</div><div class="line"></div><div class="line">lcd.init()</div><div class="line">sensor.reset()</div><div class="line">sensor.set_pixformat(sensor.RGB565)</div><div class="line">sensor.set_framesize(sensor.QVGA)</div><div class="line">sensor.run(1)</div><div class="line">while True:</div><div class="line">    img=sensor.snapshot()</div><div class="line">    lcd.display(img)</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import sensor</span><br><span class="line">import image</span><br><span class="line">import lcd</span><br><span class="line"></span><br><span class="line">lcd.init()</span><br><span class="line">sensor.reset()</span><br><span class="line">sensor.set_pixformat(sensor.RGB565)</span><br><span class="line">sensor.set_framesize(sensor.QVGA)</span><br><span class="line">sensor.run(1)</span><br><span class="line">while True:</span><br><span class="line">    img=sensor.snapshot()</span><br><span class="line">    lcd.display(img)</span><br></pre></td></tr></table></figure>
+
 <p>总之就是非常简单易用，感兴趣的同学可以移步官方WiKi和教程网站：</p>
-<p><a href="https://maixpy.sipeed.com/zh/" target="_blank" rel="external">MaixPy项目</a></p>
+<p><a target="_blank" rel="noopener" href="https://maixpy.sipeed.com/zh/">MaixPy项目</a></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文从芯片架构，到开发板选型，再到软件开发环境的搭建介绍了关于K210的基础ABC，这块KPU其实有很多有意思的应用，我会在后面的文章中进行更多介绍，包括SDK中各个模块的使用方式，以及如何将自己的AI模型部署到K210上面去运行。</p>
 <blockquote>
 <p>同时我自己也在设计新的开发板，届时项目也会进行开源的，大家可以期待一下~感兴趣的同学赶紧关注啦。</p>
 </blockquote>
-<h4 id="想要订阅的同学，可以关注我的知乎账号：-稚晖"><a href="#想要订阅的同学，可以关注我的知乎账号：-稚晖" class="headerlink" title="想要订阅的同学，可以关注我的知乎账号：@稚晖"></a>想要订阅的同学，可以关注我的知乎账号：@<a href="https://www.zhihu.com/people/zhi-hui-64-54/activities" target="_blank" rel="external">稚晖</a></h4><h4 id="以及Bilibili账号：-稚晖君"><a href="#以及Bilibili账号：-稚晖君" class="headerlink" title="以及Bilibili账号：@稚晖君"></a>以及Bilibili账号：@<a href="https://space.bilibili.com/20259914" target="_blank" rel="external">稚晖君</a></h4>
+<h4 id="想要订阅的同学，可以关注我的知乎账号：-稚晖"><a href="#想要订阅的同学，可以关注我的知乎账号：-稚晖" class="headerlink" title="想要订阅的同学，可以关注我的知乎账号：@稚晖"></a>想要订阅的同学，可以关注我的知乎账号：@<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/zhi-hui-64-54/activities">稚晖</a></h4><h4 id="以及Bilibili账号：-稚晖君"><a href="#以及Bilibili账号：-稚晖君" class="headerlink" title="以及Bilibili账号：@稚晖君"></a>以及Bilibili账号：@<a target="_blank" rel="noopener" href="https://space.bilibili.com/20259914">稚晖君</a></h4>
       
 
       
@@ -603,7 +620,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -703,11 +720,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -719,6 +736,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -727,15 +748,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -743,11 +756,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -763,11 +780,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

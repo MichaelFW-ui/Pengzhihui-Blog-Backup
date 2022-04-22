@@ -9,12 +9,12 @@
   <title>如何制作一支带逗比功能的笔 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一年一度的六一儿童节又到啦（划掉）过完啦，这年头谁还不是个宝宝！各位超龄儿童有没有收到礼物呀~  没有礼物也没关系，今天教大家制作一个小孩看了会尖叫，大人看了想剁手的高科技玩具，有教程有源码，有手就能做~  逗比钟的创意原型最早来源于国外的一个Arduino项目，当时我看完也是深深地被其由内而外散发的沙雕气息所折服，所以就顺着它的思路自己设计了一个，改进了一下结构，增加了一些额外的功能。制作这个">
-<meta name="keywords" content="项目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何制作一支带逗比功能的笔">
 <meta property="og:url" content="http://pengzhihui.xyz/2019/06/01/doubibot/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
 <meta property="og:description" content="一年一度的六一儿童节又到啦（划掉）过完啦，这年头谁还不是个宝宝！各位超龄儿童有没有收到礼物呀~  没有礼物也没关系，今天教大家制作一个小孩看了会尖叫，大人看了想剁手的高科技玩具，有教程有源码，有手就能做~  逗比钟的创意原型最早来源于国外的一个Arduino项目，当时我看完也是深深地被其由内而外散发的沙雕气息所折服，所以就顺着它的思路自己设计了一个，改进了一下结构，增加了一些额外的功能。制作这个">
+<meta property="og:locale">
 <meta property="og:image" content="http://pengzhihui.xyz/img/doubibot01.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/doubibot02.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/doubibot03.jpg">
@@ -33,10 +33,11 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/doubibot16.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/doubibot17.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/doubibot18.jpg">
-<meta property="og:updated_time" content="2020-03-01T10:37:01.000Z">
+<meta property="article:published_time" content="2019-06-01T07:30:45.000Z">
+<meta property="article:modified_time" content="2022-04-22T04:39:04.588Z">
+<meta property="article:author" content="稚晖的个人站">
+<meta property="article:tag" content="项目">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何制作一支带逗比功能的笔">
-<meta name="twitter:description" content="一年一度的六一儿童节又到啦（划掉）过完啦，这年头谁还不是个宝宝！各位超龄儿童有没有收到礼物呀~  没有礼物也没关系，今天教大家制作一个小孩看了会尖叫，大人看了想剁手的高科技玩具，有教程有源码，有手就能做~  逗比钟的创意原型最早来源于国外的一个Arduino项目，当时我看完也是深深地被其由内而外散发的沙雕气息所折服，所以就顺着它的思路自己设计了一个，改进了一下结构，增加了一些额外的功能。制作这个">
 <meta name="twitter:image" content="http://pengzhihui.xyz/img/doubibot01.jpg">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
@@ -81,7 +82,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -95,10 +96,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -157,10 +156,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -239,9 +236,35 @@ var _hmt = _hmt || [];
 <p>逗比钟的创意原型最早来源于国外的一个Arduino项目，当时我看完也是深深地被其由内而外散发的沙雕气息所折服，所以就顺着它的思路自己设计了一个，改进了一下结构，增加了一些额外的功能。制作这个逗比钟的绝大部分材料都可以在网上买到（包括零件加工），成本的话也不高，在下面的教程中我使用的主控电路板是自己设计加工的，对于小白一点的同学，如果不想自己制作焊接PCB的话，可以直接购买下面推荐型号的开发板，也是可以实现完全一样的功能的。</p>
 <p>那么首先说明一下，由于是电子DIY项目，所以最好需要你有一丢丢的电子基础：会Arduino的话就完美了；不会也没有关系，电路的连线不超过10根，代码都已经提供好了一键下载即可。至于更加详细完全面向小白的教程，我希望有热心的同学能在尝试过制作成功之后分享一下下不~</p>
 <p>来看一下最终成品的效果：</p>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE4MDA3Mg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe></div><br><br><br><br>我们从需要准备的材料入手：<br><br>- 9g舵机3个 <strong>共10元</strong><br>- 白板笔1支 <strong>共3元</strong><br>- NodeMcu ESP8266开发板一块 <strong>15元</strong><br>- 舵机拉杆 1.2MM Z字钢丝 <strong>1元</strong><br>- M3x3 平头螺丝若干<br>- M3 螺母若干<br>- M3x12 螺丝若干<br>- M3x6 T型对接螺丝若干<br>- 亚克力激光切割零件一批 <strong>根据跟加工店老板的熟悉程度0~100元不等</strong><br><br><a id="more"></a><br><br>上面的材料除了最后的亚克力零件外都是可以直接在某宝买到的，亚克力可以去某宝搜索亚克力激光切割的店铺，然后把我文章末尾链接中给出的cut文件发过去进行切割加工，颜色还可以自由挑选<br><br>至于NodeMcu，长这样↓<br><br><img src="/img/doubibot05.jpg" alt="doubibot05"><br><br>这是一个带WiFi功能的开发板，支持Arduino编程。<br><br>原版的方案是使用Arduino UNO来做的，但是很麻烦需要添加RTC时钟模块来进行走时和校准，所以我把代码移植到了性能更强也性价比更高的ESP8266平台，这样既可以利用WiFi连接互联网实现自动校时，也可以通过网络功能实现更多有意思的应用<br><br><strong>比如天气预报↓</strong><br><br><div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE4MDA3Mg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE4MDA3Mg" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
+<br /> 
 
-<p><br> </p>
+<p>我们从需要准备的材料入手：</p>
+<ul>
+<li>9g舵机3个 <strong>共10元</strong></li>
+<li>白板笔1支 <strong>共3元</strong></li>
+<li>NodeMcu ESP8266开发板一块 <strong>15元</strong></li>
+<li>舵机拉杆 1.2MM Z字钢丝 <strong>1元</strong></li>
+<li>M3x3 平头螺丝若干</li>
+<li>M3 螺母若干</li>
+<li>M3x12 螺丝若干</li>
+<li>M3x6 T型对接螺丝若干</li>
+<li>亚克力激光切割零件一批 <strong>根据跟加工店老板的熟悉程度0~100元不等</strong></li>
+</ul>
+<span id="more"></span>
+
+<p>上面的材料除了最后的亚克力零件外都是可以直接在某宝买到的，亚克力可以去某宝搜索亚克力激光切割的店铺，然后把我文章末尾链接中给出的cut文件发过去进行切割加工，颜色还可以自由挑选</p>
+<p>至于NodeMcu，长这样↓</p>
+<p><img src="/img/doubibot05.jpg" alt="doubibot05"></p>
+<p>这是一个带WiFi功能的开发板，支持Arduino编程。</p>
+<p>原版的方案是使用Arduino UNO来做的，但是很麻烦需要添加RTC时钟模块来进行走时和校准，所以我把代码移植到了性能更强也性价比更高的ESP8266平台，这样既可以利用WiFi连接互联网实现自动校时，也可以通过网络功能实现更多有意思的应用</p>
+<p><strong>比如天气预报↓</strong></p>
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE4MDA3Mg" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
+
+<br /> 
+
 <p><strong>毕竟手写时钟一分钟一顿操作，机器人还是很累的，人工智障保护协会表示强烈谴责！</strong></p>
 <p>改成写天气的话，每个小时从网络获取当地天气情况，如果天气有变的话就把它画出来，听起来不但不沙雕，甚至还觉得它有点可爱了呢。</p>
 <h2 id="那么东西准备好了，接下来就是制作过程了："><a href="#那么东西准备好了，接下来就是制作过程了：" class="headerlink" title="那么东西准备好了，接下来就是制作过程了："></a>那么东西准备好了，接下来就是制作过程了：</h2><p>拿到材料之后，可以照着3D模型文件自己组装起来，组装很简单，但是有的地方要注意一下顺序。</p>
@@ -253,9 +276,11 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>这里也给出一个爆炸图视频供大家参考：</p>
 </blockquote>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE3OTMxMg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE3OTMxMg" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
 
-<p><br></p>
+<br />
+
 <p>以下是我加工回来的一堆亚克力↓<img src="/img/doubibot07.jpg" alt="doubibot07"></p>
 <blockquote>
 <p>这里有大概3套零件</p>
@@ -291,26 +316,32 @@ var _hmt = _hmt || [];
 <p>打开Arduino IDE，选择好板卡和串口点击上传即可，IDE配置如下，其中的端口根据你们自己的实际端口选择↓</p>
 <p><img src="/img/doubibot16.jpg" alt="doubibot16"></p>
 <p>这里解释一下代码里面的一些东西：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//#define DRAW_WEATHER</div><div class="line">//#define DRAW_TIME</div></pre></td></tr></table></figure>
-<p>这两行被注释了，所以下载完程序之后默认是没有任何动作的，如果需要手写时间则删除第二行前面的//，如果要画天气则删除第一行的//</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">const char* SSID = &quot;***&quot;;		// 要连接的WiFi的名称</div><div class="line">const char* PASSWORD = &quot;***&quot;;		// 要连接的WiFi的密码</div><div class="line">const char* CITY = &quot;shanghai&quot;;</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//#define DRAW_WEATHER</span><br><span class="line">//#define DRAW_TIME</span><br></pre></td></tr></table></figure>
+
+<p>这两行被注释了，所以下载完程序之后默认是没有任何动作的，如果需要手写时间则删除第二行前面的&#x2F;&#x2F;，如果要画天气则删除第一行的&#x2F;&#x2F;</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const char* SSID = &quot;***&quot;;		// 要连接的WiFi的名称</span><br><span class="line">const char* PASSWORD = &quot;***&quot;;		// 要连接的WiFi的密码</span><br><span class="line">const char* CITY = &quot;shanghai&quot;;</span><br></pre></td></tr></table></figure>
+
 <p>这个大家都看得懂，改成你家的WiFi名称和密码即可，使用天气的话下面的CITY改成你在的城市的小写拼音</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// uncommet this to do calibration, code will be blocked here</div><div class="line">control.Calibrate();</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// uncommet this to do calibration, code will be blocked here</span><br><span class="line">control.Calibrate();</span><br></pre></td></tr></table></figure>
+
 <p>上面这一行比较关键，前面说的校准就是在这里设置的，首先按照上面的说明修改好代码之后，下载完第一次运行的时候舵机会上电转到一个位置之后固定不动，因为代码会在这一步卡住。这时候需要你调整三个舵机的塑料摆臂的位置，变成如下状态↓</p>
 <p><img src="/img/doubibot17.jpg" alt="doubibot17"></p>
 <p><img src="/img/doubibot18.jpg" alt="doubibot18"></p>
 <p>全部调整好了之后，把这一句注释掉：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// uncommet this to do calibration, code will be blocked here</div><div class="line">// control.Calibrate();</div></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// uncommet this to do calibration, code will be blocked here</span><br><span class="line">// control.Calibrate();</span><br></pre></td></tr></table></figure>
+
 <p>再次上传程序，就可以看到机器人开始画东西了，大功告成~</p>
 <p>下面这个是视频演示的是通过电脑端串口助手发送命令到逗比钟让它执行的效果，注意白板的左下角是零点坐标。</p>
 <blockquote>
 <p>上位机命令模式</p>
 </blockquote>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE3OTc0OA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XNDIxNDE3OTc0OA" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
 
-<p><br> </p>
+<br /> 
+
 <p>详细的代码注释大家可以参考我给出的工程文件，祝大家玩得开心。</p>
-<h2 id="项目文件的Github地址："><a href="#项目文件的Github地址：" class="headerlink" title="项目文件的Github地址："></a><strong>项目文件的Github地址：</strong></h2><p><a href="https://github.com/david-pzh/DoubiBot" target="_blank" rel="external">DoubiBot</a></p>
+<h2 id="项目文件的Github地址："><a href="#项目文件的Github地址：" class="headerlink" title="项目文件的Github地址："></a><strong>项目文件的Github地址：</strong></h2><p><a target="_blank" rel="noopener" href="https://github.com/david-pzh/DoubiBot">DoubiBot</a></p>
 
       
 
@@ -505,7 +536,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -605,11 +636,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -621,6 +652,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -629,15 +664,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -645,11 +672,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -665,11 +696,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

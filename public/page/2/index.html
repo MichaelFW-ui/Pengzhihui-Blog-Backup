@@ -12,8 +12,9 @@
 <meta property="og:title" content="稚晖的个人站">
 <meta property="og:url" content="http://pengzhihui.xyz/page/2/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
+<meta property="og:locale">
+<meta property="article:author" content="稚晖的个人站">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="稚晖的个人站">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
   
@@ -57,7 +58,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -71,10 +72,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -133,10 +132,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -211,11 +208,17 @@ var _hmt = _hmt || [];
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p><strong>关注我的同学都知道，在搞项目方面我一点也不挑食，有啥玩啥，擅于给自己找麻烦。</strong></p>
 <p>由于个人本职工作是搞AI的，在不久之前的一个项目中，我用STM32制作了一个小模块，探讨了一下<code>“推理一个实用神经网络最低需要什么样的算力”</code>这个问题。项目的演示视频如下：</p>
-<div style="height: 0;padding-bottom:65%;position: relative;"><br><iframe width="760" height="510" src="//player.bilibili.com/player.html?aid=61175015&cid=106431941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="position: absolute;height: 105%;width: 100%;"> </iframe><br></div>  
+<div style="height: 0;padding-bottom:65%;position: relative;">
+<iframe width="760" height="510"  
+        src="//player.bilibili.com/player.html?aid=61175015&cid=106431941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="" style="position: absolute;height: 105%;width: 100%;"> </iframe>
+</div>  
 
 
 
-<p><br></p>
+<br />
+
+
+
 <blockquote>
 <p>基于Cortex-M的M4CNN模块 </p>
 </blockquote>
@@ -231,9 +234,9 @@ var _hmt = _hmt || [];
 </blockquote>
 <p>稍微解释一下上图的话就是，由于物理定律限制我们可以认为：在其他条件一定的情况下，性能和功耗肯定成正比，更强的性能意味着更大的功耗也就会产生跟多的热量；而要想提升性能的同时还能保证功耗不变甚至更低的话，就只能改进芯片的架构或者改进制程工艺，这又会带来成本的提高。因而根据不同应用方向，我们可以选择兼顾其中两者的一些硬件平台：</p>
 <ul>
-<li><strong>成本低，性能弱，功耗也低</strong>：代表是各种单片机如STM32/AVR等。</li>
+<li><strong>成本低，性能弱，功耗也低</strong>：代表是各种单片机如STM32&#x2F;AVR等。</li>
 <li><strong>成本低，性能强，但制程不高易发热</strong>：代表是各种低端SoC比如全志的H系列。</li>
-<li><strong>性能强，制程先进，但价格十分不友好，有钱还不一定给卖系列</strong>：代表是现在智能手机上使用的各种旗舰SoC，比如高通骁龙/海思麒麟/苹果A系。</li>
+<li><strong>性能强，制程先进，但价格十分不友好，有钱还不一定给卖系列</strong>：代表是现在智能手机上使用的各种旗舰SoC，比如高通骁龙&#x2F;海思麒麟&#x2F;苹果A系。</li>
 </ul>
 <p>那难道真的就没有三者兼得的芯片平台了吗？</p>
 <p>其实还真有，本篇的主角<strong>K210</strong>就勉强算是一个，这也是我这次选择折腾这个项目的主要原因，接下来请听我仔细分析~</p>
@@ -242,14 +245,14 @@ var _hmt = _hmt || [];
 <p>可不要以为MCU的性能就一定比不上高端SoC，至少在AI计算方面，K210的算力其实是相当可观的。根据嘉楠官方的描述，K210的KPU算力有0.8<em>TOPS</em> ，作为对比，拥有128个CUDA单元GPU的英伟达Jetson Nano的算力是0.47<em>TFLOPS</em> （浮点）；而最新的树莓派4只有不到0.1<em>TFLOPS</em> 。</p>
 <p>当然了，这个性能跟某些旗舰级别的SoC还是有差距的：A76级别的CPU本身就已经很变态，更何况旗舰SoC上面都会搭载用于AI加速的硬件用于异构运算，比如高通的Hexagon DSP、苹果的Neural Engine、华为的达芬奇架构NPU等等，这些NPU在某些应用下甚至能达到与数百W功耗的桌面级GPU接近的算力（顺便提一下GTX1080Ti的双精度浮点算力是11.3 <em>TFLOPS</em> ），可以说是丧心病狂了。</p>
 <blockquote>
-<p>值得注意的是，芯片的算力不一定和模型推理速度成正比，嵌入式AI的另一个核心是inference框架。对于CPU架构来说，是否使用SIMD（ARM从v7开始就支持NEON指令了）、是否使用多核多线程、是否有高效的卷积实现方式、是否有做汇编优化等等都会极大影响模型运行速度；而对DSP/NPU等硬件架构来说，是否对模型进行量化推理、量化的方式、访存的优化等也会有很大影响。</p>
+<p>值得注意的是，芯片的算力不一定和模型推理速度成正比，嵌入式AI的另一个核心是inference框架。对于CPU架构来说，是否使用SIMD（ARM从v7开始就支持NEON指令了）、是否使用多核多线程、是否有高效的卷积实现方式、是否有做汇编优化等等都会极大影响模型运行速度；而对DSP&#x2F;NPU等硬件架构来说，是否对模型进行量化推理、量化的方式、访存的优化等也会有很大影响。</p>
 </blockquote>
 <p><strong>K210的其他参数如下：</strong></p>
 <ul>
-<li>双核 64-bit RISC-V RV64IMAFDC (RV64GC) CPU / 400MHz（可超频到600MHz）</li>
+<li>双核 64-bit RISC-V RV64IMAFDC (RV64GC) CPU &#x2F; 400MHz（可超频到600MHz）</li>
 <li>双精度 FPU</li>
 <li>8MiB 64bit 片上 SRAM（6MiB通用SRAM+2MiB的AI专用SRAM）</li>
-<li>神经网络处理器（KPU） / 0.8TFLOPS</li>
+<li>神经网络处理器（KPU） &#x2F; 0.8TFLOPS</li>
 <li>音频处理器（APU）</li>
 <li>可编程 IO 阵列 (FPIOA)</li>
 <li>双硬件512点16位复数FFT</li>
@@ -347,10 +350,14 @@ var _hmt = _hmt || [];
 <p>最近想试试把以前搞嵌入式单片机的一些经验和最近在做的深度学习结合起来，正好前段时间看到新闻说新款iPhone和下一代Pixel似乎都要加入隔空手势识别功能，所以idea就来啦。</p>
 <p>为了在Cortex-M的MCU上成功跑起CNN，用的模型是一个不到10层FCN网络，但是即便如此，对于主频只有不到100MHz，SRAM只有不到100K的单片机来说依然是极其吃力的，模型不做量化的话肯定无法做到实时的。</p>
 <p>实现细节等有空整理好资料再来详细介绍，先来看看最终效果，整个代码包括量化工具都是纯手撸hardcode，没做成框架，主要是因为，我懒🤫。</p>
-<div style="height: 0;padding-bottom:65%;position: relative;"><br><iframe width="760" height="510" src="//player.bilibili.com/player.html?aid=61175015&cid=106431941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="position: absolute;height: 105%;width: 100%;"> </iframe><br></div>  
+<div style="height: 0;padding-bottom:65%;position: relative;">
+<iframe width="760" height="510"  
+        src="//player.bilibili.com/player.html?aid=61175015&cid=106431941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="" style="position: absolute;height: 105%;width: 100%;"> </iframe>
+</div>  
 
 
-<p><br></p>
+<br />
+
 
       
 
@@ -430,10 +437,14 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>来看一下最终效果的视频演示</p>
 </blockquote>
-<div style="height: 0;padding-bottom:65%;position: relative;"><br><iframe width="760" height="510" src="//player.bilibili.com/player.html?aid=58988178&cid=102826886&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="position: absolute;height: 105%;width: 100%;"> </iframe><br></div>  
+<div style="height: 0;padding-bottom:65%;position: relative;">
+<iframe width="760" height="510"  
+        src="//player.bilibili.com/player.html?aid=58988178&cid=102826886&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="" style="position: absolute;height: 105%;width: 100%;"> </iframe>
+</div>  
 
 
-<p><br></p>
+<br />
+
 <p>那为什么叫<strong>Pico</strong>呢？pico是一个数量级单位，也即10^-12（中文叫做皮）。<br>大家都知道我对小巧精致的东西有着执着的追求😉<br>以往的作品中<em>mini</em>、<em>nano</em>之类字眼的已经都使用过了，所以这次找到了<em>pico</em>来作为名称。<br>可真是聪明啊。</p>
 <p>按照这个（并不）巧妙的命名套路，相信大家已经可以预见我未来作品中的词汇量了😃 。<br>其实还有一个更合理的原因，p-i-c-o的发音清脆，音节突出，语音唤醒的成功率会更高，所以拿来做唤醒词实在是坠吼的啦。</p>
 <p><strong>“你好，Pico！”</strong></p>
@@ -513,10 +524,15 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="这是一个先导项目。"><a href="#这是一个先导项目。" class="headerlink" title="这是一个先导项目。"></a>这是一个先导项目。</h2><p>用ESP32做了一个小板子，非常非常非常的迷你，板载有WiFi、蓝牙功能，集成了一颗摄像头，一个0.49寸的OLED屏幕，以及电池管理IC。</p>
-<div style="height: 0;padding-bottom:65%;position: relative;"><br><iframe width="760" height="510" src="//player.bilibili.com/player.html?aid=61172827&cid=106428520&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen style="position: absolute;height: 105%;width: 100%;"> </iframe><br></div>  
+<div style="height: 0;padding-bottom:65%;position: relative;">
+<iframe width="760" height="510"  
+        src="//player.bilibili.com/player.html?aid=61172827&cid=106428520&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="" style="position: absolute;height: 105%;width: 100%;"> </iframe>
+</div>  
 
 
-<p><br></p>
+<br />
+
+
 <p><img src="/img/esppico1.jpg" alt="esppico1"></p>
 <blockquote>
 <p>PCB设计图</p>
@@ -663,7 +679,7 @@ var _hmt = _hmt || [];
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -675,7 +691,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -775,11 +791,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -791,6 +807,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -799,15 +819,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -815,11 +827,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -835,11 +851,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

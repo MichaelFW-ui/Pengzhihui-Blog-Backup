@@ -9,12 +9,12 @@
   <title>如何制作一个带指纹识别的机械键盘 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在Windows 10发布时，除了使用传统的登陆密码，操作系统还支持三种Windows Hello类型： PIN，面部识别，和指纹识别。 也许我们在各种智能手机上已经习惯于手指一按或者盯着屏幕就可以解锁直奔主题的感觉，但是对于PC来说，生物识别的普及速度似乎慢了不止半拍。 这其中有很多原因，可以归结于电脑的使用方式不像手机需要频繁解锁，也可以认为PC行业作为老消费电子业创新力匮乏各大厂商没有动力">
-<meta name="keywords" content="项目,Arduino">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何制作一个带指纹识别的机械键盘">
 <meta property="og:url" content="http://pengzhihui.xyz/2019/05/14/fingerboard/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
 <meta property="og:description" content="在Windows 10发布时，除了使用传统的登陆密码，操作系统还支持三种Windows Hello类型： PIN，面部识别，和指纹识别。 也许我们在各种智能手机上已经习惯于手指一按或者盯着屏幕就可以解锁直奔主题的感觉，但是对于PC来说，生物识别的普及速度似乎慢了不止半拍。 这其中有很多原因，可以归结于电脑的使用方式不像手机需要频繁解锁，也可以认为PC行业作为老消费电子业创新力匮乏各大厂商没有动力">
+<meta property="og:locale">
 <meta property="og:image" content="http://pengzhihui.xyz/img/fingerboard00.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/fingerboard01.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/fingerboard02.jpg">
@@ -36,10 +36,12 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/fingerboard18.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/fingerboard19.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/v2-2c8ae42c94e90fd29b09792f42312102_b.gif">
-<meta property="og:updated_time" content="2020-03-01T10:37:01.000Z">
+<meta property="article:published_time" content="2019-05-14T15:36:15.000Z">
+<meta property="article:modified_time" content="2022-04-22T04:39:04.589Z">
+<meta property="article:author" content="稚晖的个人站">
+<meta property="article:tag" content="项目">
+<meta property="article:tag" content="Arduino">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何制作一个带指纹识别的机械键盘">
-<meta name="twitter:description" content="在Windows 10发布时，除了使用传统的登陆密码，操作系统还支持三种Windows Hello类型： PIN，面部识别，和指纹识别。 也许我们在各种智能手机上已经习惯于手指一按或者盯着屏幕就可以解锁直奔主题的感觉，但是对于PC来说，生物识别的普及速度似乎慢了不止半拍。 这其中有很多原因，可以归结于电脑的使用方式不像手机需要频繁解锁，也可以认为PC行业作为老消费电子业创新力匮乏各大厂商没有动力">
 <meta name="twitter:image" content="http://pengzhihui.xyz/img/fingerboard00.jpg">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
@@ -84,7 +86,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -98,10 +100,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -160,10 +160,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -240,14 +238,15 @@ var _hmt = _hmt || [];
 <p>这其中有很多原因，可以归结于电脑的使用方式不像手机需要频繁解锁，也可以认为PC行业作为老消费电子业创新力匮乏各大厂商没有动力跟进最新技术（只有各大RGB灯厂依然蓬勃发展哈哈），但总之现状就是Windows Hello出现了这么久市面上能够适配的配件依然寥寥可数。</p>
 <p>嘛，作为一个呆萌极客，遇到这种问题肯定是要挺身而出的，反正让我敲一长串密码我就难受，连指纹人脸都没有的电脑能算得上是神机吗？我表示强烈摇头。</p>
 <p><strong>今天就来教大家如何强势改造自己的键盘，给它添加上指纹模块，一键登录美滋滋。</strong></p>
-<a id="more"></a>
+<span id="more"></span>
+
 <p>开始之前，先介绍一下本次DIY的背景，其实个人自己用的台式机是支持人脸识别的，我很早（从RealSense发布的时候）就开始关注Windows Hello了。那时候能买的RealSense摄像头都很贵（现在也不便宜），我最早选择的是SR300这个型号，用是挺好用的，但是故障率奇高，半年时间内用坏了两个，所以当罗技也推出了支持人脸登录的Webcam之后，我毫不犹豫入手了一个，就是下面这个玩意↓</p>
 <p><img src="/img/fingerboard01.jpg" alt="加载失败,请刷新"></p>
 <p>来到公司之后，在公司的电脑上我自然也想设置相同的人脸解锁功能，但是很可惜，<strong>出于信息安全考虑，公司的电脑登录设置被策略组限制，只能使用密码而无法设置PIN</strong></p>
 <p><img src="/img/fingerboard02.jpg" alt="加载失败,请刷新"></p>
 <p>而在使用Windows Hello在设备上启用生物识别之前，必须选择PIN作为初始解锁方式。所以经过一番搜索后，对于是否可以在不设置PIN的情况下使用Windows Hello解锁这个问题，这里的答案是<strong>否定</strong>的，没有办法禁用PIN，且只有设置PIN后，才可以根据需要添加生物识别。</p>
 <p>在Windows 10中，PIN登录是新Microsoft Passport功能的一部分，并且比传统密码更安全，下面的链接是微软官方的介绍↓</p>
-<p><a href="https://docs.microsoft.com/zh-cn/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password" target="_blank" rel="external">PIN 优于密码的原因</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password">PIN 优于密码的原因</a></p>
 <p><strong>道理我都懂，但是这种情况下我要怎么愉快地在公司___呢？</strong></p>
 <p>当然难不倒我，既然软件上无法支持，那我们就来造一个物理外挂：<strong>直接用Arduino模拟成一个HID键盘，再通过指纹模块来做身份验证。</strong></p>
 <p>原理图如下↓</p>
@@ -314,7 +313,7 @@ var _hmt = _hmt || [];
 <p><img src="/img/v2-2c8ae42c94e90fd29b09792f42312102_b.gif" alt="加载失败,请刷新"></p>
 <h3 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h3><p>本次DIY主要是解决了无法使用PIN的情况下使用WIndows Hello的问题。对于大家自己的电脑，其实完全可以不需要Arduino这一块板子，直接在Hub的一口接入USB指纹模块即可，也是可以完美兼容的~</p>
 <p>Arduino的代码在这里，传感器的链接和引脚的接法都在代码里，需要的同学可以自行尝试，记得给个星星~</p>
-<p><a href="https://github.com/david-pzh/FingerBoard" target="_blank" rel="external"><strong>[Github] FingerBoard</strong></a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/david-pzh/FingerBoard"><strong>[Github] FingerBoard</strong></a></p>
 
       
 
@@ -513,7 +512,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -613,11 +612,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -629,6 +628,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -637,15 +640,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -653,11 +648,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -673,11 +672,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

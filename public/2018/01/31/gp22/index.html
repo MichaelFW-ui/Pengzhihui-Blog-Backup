@@ -8,13 +8,13 @@
   <link rel="dns-prefetch" href="http://pengzhihui.xyz">
   <title>测量一千亿分之1秒的时间 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="很久没玩硬件了，心想传统手艺不能丢啊，这次设计了个小板子，用于高精度的时间采样~ 可并不是我标题党哟，这个小模块能测量皮秒级别的时间差，而这在很多地方都能有应用的，有兴趣的听我继续详细介绍XD  ​        1ps = 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200公里只需要">
-<meta name="keywords" content="项目,Arduino">
+  <meta name="description" content="很久没玩硬件了，心想传统手艺不能丢啊，这次设计了个小板子，用于高精度的时间采样~ 可并不是我标题党哟，这个小模块能测量皮秒级别的时间差，而这在很多地方都能有应用的，有兴趣的听我继续详细介绍XD  ​        1ps &#x3D; 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测量一千亿分之1秒的时间">
 <meta property="og:url" content="http://pengzhihui.xyz/2018/01/31/gp22/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
-<meta property="og:description" content="很久没玩硬件了，心想传统手艺不能丢啊，这次设计了个小板子，用于高精度的时间采样~ 可并不是我标题党哟，这个小模块能测量皮秒级别的时间差，而这在很多地方都能有应用的，有兴趣的听我继续详细介绍XD  ​        1ps = 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200公里只需要">
+<meta property="og:description" content="很久没玩硬件了，心想传统手艺不能丢啊，这次设计了个小板子，用于高精度的时间采样~ 可并不是我标题党哟，这个小模块能测量皮秒级别的时间差，而这在很多地方都能有应用的，有兴趣的听我继续详细介绍XD  ​        1ps &#x3D; 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200">
+<meta property="og:locale">
 <meta property="og:image" content="http://pengzhihui.xyz/img/gp22_1.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/gp22_2.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/gp22_3.jpg">
@@ -24,10 +24,12 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/gp22_7.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/gp22_8.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/gp22_9.jpg">
-<meta property="og:updated_time" content="2020-03-01T10:37:01.000Z">
+<meta property="article:published_time" content="2018-01-31T14:56:18.000Z">
+<meta property="article:modified_time" content="2022-04-22T04:39:04.589Z">
+<meta property="article:author" content="稚晖的个人站">
+<meta property="article:tag" content="项目">
+<meta property="article:tag" content="Arduino">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测量一千亿分之1秒的时间">
-<meta name="twitter:description" content="很久没玩硬件了，心想传统手艺不能丢啊，这次设计了个小板子，用于高精度的时间采样~ 可并不是我标题党哟，这个小模块能测量皮秒级别的时间差，而这在很多地方都能有应用的，有兴趣的听我继续详细介绍XD  ​        1ps = 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200公里只需要">
 <meta name="twitter:image" content="http://pengzhihui.xyz/img/gp22_1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
@@ -72,7 +74,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -86,10 +88,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -148,10 +148,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -227,14 +225,15 @@ var _hmt = _hmt || [];
 <p>很久没玩硬件了，心想<strong>传统手艺不能丢啊</strong>，这次设计了个小板子，用于高精度的时间采样~</p>
 <p>可并不是我标题党哟，这个小模块能测量<strong>皮秒</strong>级别的时间差，而这在很多地方都能有应用的，有兴趣的听我继续详细介绍XD</p>
 </blockquote>
-<p>​        1ps = 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200公里只需要4毫秒。</p>
+<p>​        1ps &#x3D; 10^-12s  ,也就是一万亿分之一秒，这是短到窒息的一段时间，即便是以宇宙最快的光速，在1ps的时间里也只能走0.3mm，而要知道光速从上海跑到深圳1200公里只需要4毫秒。</p>
 <p><img src="/img/gp22_2.jpg" alt="加载失败,请刷新"></p>
 <p>​        用过单片机的同学都知道，绝大多数的单片机都有定时器的功能，通过计算配置外设寄存器，我们能利用定时器中断来精确测量一段时间。而这个时间的精度是什么决定的呢，答案是MCU时钟的频率。</p>
-<a id="more"></a>
+<span id="more"></span>
+
 <p>​        也就是说，假如我们使用的是1MHz的晶振作为高速时钟（不考虑分频和倍频），那么每个时钟周期就是1us，这也就作为定时器的计数单位 – 开始计时后，每过1us，相应寄存器的值会加1，等中断到来，我们读取最终的计数值，乘以1us的单位，就得到计时的间隔了。</p>
 <p><img src="/img/gp22_3.jpg" alt="加载失败,请刷新"></p>
-<p>​        可见，为了提高计时的最小单位，我们就必须用上更高速的时钟，可是单片机的高速时钟都由晶振倍频而来，而晶振的频率是有限的，一般市面上能买到的最高频率为50MHz；另外就算晶振频率够高，单片机能否运行在这么高的主频也是个问题 – Arduino运行在16MHz，高端的ARM单片机也不会超过200MHz，这样算下来，能测量的最小间隔也就是1/200000000 = 5*10^-9s也就是5ns。5ns看起来也还不错，然而事实上，高主频的MCU并不会用来裸跑程序，都会上操作系统，在操作系统内核下，中断的响应一般是控制在ms级别，要综合考虑系统开销，即便ns级的时间也是很难实现的。</p>
-<p>​        那还有什么办法呢？黑科技一般的<a href="https://baike.baidu.com/item/%E5%8E%9F%E5%AD%90%E9%92%9F/765460?fr=aladdin" target="_blank" rel="external">原子钟</a>，靠的是参考参考原子振动的频率（比如铯的钟跃迁频率是9.1GHz），但我们当然没有办法搞这样的操作😅，所以在ACAM的产品中，他们很聪明地利用芯片内部的逻辑门延迟来以高精度测量时间间隔。</p>
+<p>​        可见，为了提高计时的最小单位，我们就必须用上更高速的时钟，可是单片机的高速时钟都由晶振倍频而来，而晶振的频率是有限的，一般市面上能买到的最高频率为50MHz；另外就算晶振频率够高，单片机能否运行在这么高的主频也是个问题 – Arduino运行在16MHz，高端的ARM单片机也不会超过200MHz，这样算下来，能测量的最小间隔也就是1&#x2F;200000000 &#x3D; 5*10^-9s也就是5ns。5ns看起来也还不错，然而事实上，高主频的MCU并不会用来裸跑程序，都会上操作系统，在操作系统内核下，中断的响应一般是控制在ms级别，要综合考虑系统开销，即便ns级的时间也是很难实现的。</p>
+<p>​        那还有什么办法呢？黑科技一般的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8E%9F%E5%AD%90%E9%92%9F/765460?fr=aladdin">原子钟</a>，靠的是参考参考原子振动的频率（比如铯的钟跃迁频率是9.1GHz），但我们当然没有办法搞这样的操作😅，所以在ACAM的产品中，他们很聪明地利用芯片内部的逻辑门延迟来以高精度测量时间间隔。</p>
 <p><img src="/img/gp22_4.jpg" alt="加载失败,请刷新"></p>
 <p>​        特殊的测量方法使信号通过逻辑门的时间可以被保证非常精确，而最大的测量精度完全取决于内部信号通过逻辑门的传播时间，这个时间一般和电压和温度有关，比如3.3V 和 25°C 时，GP22 的最小分辨率是 90 ps。这次做的模块当中，使用的就是他们家最新的TDC芯片GP22。</p>
 <p><img src="/img/gp22_6.jpg" alt="加载失败,请刷新"></p>
@@ -245,8 +244,14 @@ var _hmt = _hmt || [];
 <p><img src="/img/gp22_7.jpg" alt="加载失败,请刷新"></p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
 <p>可以测量ps级的时间是很棒，可是这有什么用呢？</p>
+</blockquote>
+<blockquote>
 <p>用处很多：比如利用激光发射再返回的时间差，我们能制作高精度的激光测距机（实际上TOF的激光雷达原理就是这个）；比如利用光在不同介质里面的速度不同，我们可以测量液体的折射率和厚度；比如利用超声波在流动的流体中传播时就载上流体流速的信息，通过接收到的超声波就可以检测出流体的流速，从而换算成流量来制作无接触的流量计；比如Kinect就是基于TOF的深度摄像头系统，等等。</p>
+</blockquote>
+<blockquote>
 <p>TDC-GP22的资料国内并不多，但是好在官方的文档写的很详细，于是自己调试了两天得到这个结果，中间还是遇到不少困难的。再感慨一下，做硬件和做软件其实真的需要很不一样的两种思维，这把小小爽完，重回身为软件狗的正轨啦哈哈（逃。</p>
+</blockquote>
+<blockquote>
 <p>硬件电路开源，软件的话等有空写成库了再发</p>
 </blockquote>
 <p><img src="/img/gp22_8.jpg" alt="加载失败,请刷新"></p>
@@ -449,7 +454,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -549,11 +554,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -565,6 +570,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -573,15 +582,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -589,11 +590,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -609,11 +614,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

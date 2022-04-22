@@ -12,8 +12,9 @@
 <meta property="og:title" content="稚晖的个人站">
 <meta property="og:url" content="http://pengzhihui.xyz/page/9/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
+<meta property="og:locale">
+<meta property="article:author" content="稚晖的个人站">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="稚晖的个人站">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
   
@@ -57,7 +58,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -71,10 +72,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -133,10 +132,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -247,9 +244,12 @@ var _hmt = _hmt || [];
 <p>组合到一起，就是这个效果↓</p>
 <p><img src="/img/clover05.jpg" alt="加载失败,请刷新"></p>
 <p>ok，剩下的工作，就是在Android上进行APP开发，充分利用各种传感器和网络功能，以及手机的强大运算能力，来实现我要的效果。最终实现的效果如下↓</p>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTY1MTA3NzA2MA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XMTY1MTA3NzA2MA" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe></div>  
 
-<p><br> </p>
+<br /> 
+
+
 <p>这其中技术细节太多，就不一一讲解了，感兴趣的可以参考下面的技术路线导图↓</p>
 <p><img src="/img/clover06.jpg" alt="加载失败,请刷新"></p>
 <h3 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h3><p>小氪这个项目是我在16年的时候在学校突发奇想做的一个小项目，基本上用到的很多技术也是现学现用，所以不算非常完美，还有很多可优化的空间；另一个角度上来说，也正是因为做这个项目让我涨了非常多额外的技能点，比如三维建模、Unity开发、Android Native开发等等…</p>
@@ -411,18 +411,19 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong><font size="4px">“迹” for Android</font></strong> </p>
+        <p><strong><font size = "4px">“迹” for Android</font></strong> </p>
 <blockquote>
 <p>“迹”是一个基于OpenCV的图像处理APP，它可以让手机通过摄像头实时跟踪设定的颜色目标，并且通过手机蓝牙将目标坐标位置和大小等信息输出，配合蓝牙串口模块和我写的配套Arduino数据接收库，可以实现很多有趣的功能~ 这篇文章主要讲解一下“迹”的使用方法，以及如何通过目标追踪功能制作一个简单的小车。</p>
 </blockquote>
 <pre><code>APP软件运行界面：
-</code></pre><p><img src="/img/trace.gif" alt="加载失败,请刷新"><img src="/img/trace01.png" alt="加载失败,请刷新"></p>
+</code></pre>
+<p><img src="/img/trace.gif" alt="加载失败,请刷新"><img src="/img/trace01.png" alt="加载失败,请刷新"></p>
 <pre><code>安装方法
-</code></pre><ul>
-<li><strong>直接安装Trace.apk，Android5.0以上系统需要到设置里赋予应用相机和蓝牙权限</strong></li>
-</ul>
-<pre><code>使用方法
-</code></pre><ul>
+</code></pre>
+<ul>
+<li><p><strong>直接安装Trace.apk，Android5.0以上系统需要到设置里赋予应用相机和蓝牙权限</strong></p>
+<p>  使用方法</p>
+</li>
 <li><p>进软件之后可以点击连接蓝牙，选择你的蓝牙模块（模块需要事先在手机系统蓝牙设置里面配对好），连接上之后如果有目标信息就会通过蓝牙发送到模块上，Arduino进行读取就可以了。</p>
 </li>
 <li><p>点击左上角的按钮进入预览画面，此时在预览窗口中点击任何一个你想追踪的物体，就会自动进行处理输出数据了，顶栏会显示你选中的颜色。</p>
@@ -436,10 +437,12 @@ var _hmt = _hmt || [];
 <li>进度条用于调节图像处理阈值，这个值用于色块过滤，可以理解为，用于设置最小的目标块的限制，也就是当目标小于一定程度就过滤掉。</li>
 <li>T、X、Y三个参数是目标的信息，XY是坐标大家都知道（坐标的最大值跟手机镜头分辨率有关）；T是目标的大小信息，如果检测到多个目标或者没有检测到任何目标这里会显示E（error）。T可以用于粗略得判断物体的远近（近大远小），不过更推荐的方式是用Y轴判断远近（见后文的小车）。</li>
 </ul>
-<p><font color="#4590a3" size="4px">演示视频</font>  </p>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTU2MTc0NTgxNg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>  
+<p><font color="#4590a3" size = "4px">演示视频</font>  </p>
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XMTU2MTc0NTgxNg" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe>
+</div>  
 
-<p><br><br>
+<br />
         
           <a class="article-more-a" href="/2016/05/05/trace/#more">继续阅读 >></a>
         
@@ -527,12 +530,16 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong><font color="#4590a3" size="5px">Ctrl Beta版粗来啦</font></strong><br><img src="/img/ctrl5.jpg" alt="加载失败,请刷新"></p>
+        <p><strong><font color="#4590a3" size = "5px">Ctrl Beta版粗来啦</font></strong><br><img src="/img/ctrl5.jpg" alt="加载失败,请刷新"></p>
 <p>关注我的同学应该知道很久以前我开始尝试制作一个动作同步手环用于同步控制机械手（之前的方案是用Leap Motion），然后那个项目自从去年11月以来就断断续续一直没什么进展…倒也不是我懒，只是制作过程中发现细节的东西太多太复杂…比如多传感器的延迟，模块电源电路设计失误，上位机通信速率不足，最大的坑是惯性元件的漂移补偿…以及光电路就改了四版<br><img src="/img/ctrl4.jpg" alt="加载失败,请刷新"></p>
 <p>目前有了点阶段性的成果，东西依然在完善中，如何提高稳定性以及把每个传感器节点化是下一步的探索方向</p>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTU0NzU0NTkyOA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
+<div style="height: 0;padding-bottom: 61%;position: relative;">
+<iframe width="560" height="315" src="http://player.youku.com/embed/XMTU0NzU0NTkyOA" frameborder="0" allowfullscreen="" style="position: absolute;height: 100%;width: 100%;"></iframe>
+</div>
 
-<p><br><br><img src="/img/ctrl2.jpg" alt="加载失败,请刷新"></p>
+<br />
+![加载失败,请刷新](/img/ctrl2.jpg)
+
 <p><img src="/img/ctrl3.jpg" alt="加载失败,请刷新"></p>
 <p><img src="/img/ctrl1.jpg" alt="加载失败,请刷新"></p>
 
@@ -613,7 +620,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/img/IRemote2.jpg" alt="加载失败,请刷新"><br>教研室在做一个机房监控的项目，其中貌似要求所有相关监测设备IP化，对于空调而言，实现通过网络远程控制的方案已经见怪不怪了，比如之前有点火的broadlink：</p>
-<p><strong><em>（点击more继续阅读 -&gt;）</em></strong><br>
+<p><em><strong>（点击more继续阅读 -&gt;）</strong></em></p>
         
           <a class="article-more-a" href="/2016/04/21/IRemote/#more">继续阅读 >></a>
         
@@ -671,7 +678,7 @@ var _hmt = _hmt || [];
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/8/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/8/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -683,7 +690,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -783,11 +790,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -799,6 +806,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -807,15 +818,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -823,11 +826,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -843,11 +850,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -8,21 +8,24 @@
   <link rel="dns-prefetch" href="http://pengzhihui.xyz">
   <title>让STM32运行Lua脚本 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...   • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前有">
-<meta name="keywords" content="项目,ARM,LUA">
+  <meta name="description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...    • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前">
 <meta property="og:type" content="article">
 <meta property="og:title" content="让STM32运行Lua脚本">
 <meta property="og:url" content="http://pengzhihui.xyz/2016/10/10/luapad/index.html">
 <meta property="og:site_name" content="稚晖的个人站">
-<meta property="og:description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...   • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前有">
+<meta property="og:description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...    • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前">
+<meta property="og:locale">
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad1.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad2.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad3.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad4.jpg">
-<meta property="og:updated_time" content="2020-03-01T10:37:01.000Z">
+<meta property="article:published_time" content="2016-10-10T12:56:57.000Z">
+<meta property="article:modified_time" content="2022-04-22T04:39:04.593Z">
+<meta property="article:author" content="稚晖的个人站">
+<meta property="article:tag" content="项目">
+<meta property="article:tag" content="ARM">
+<meta property="article:tag" content="LUA">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="让STM32运行Lua脚本">
-<meta name="twitter:description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...   • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前有">
 <meta name="twitter:image" content="http://pengzhihui.xyz/img/luapad1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="稚晖的个人站" type="application/atom+xml">
@@ -67,7 +70,7 @@ var _hmt = _hmt || [];
 
 
 
-</head>
+<meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -81,10 +84,8 @@ var _hmt = _hmt || [];
 			<img src="/logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">稚晖的个人站</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -143,10 +144,8 @@ var _hmt = _hmt || [];
 				<img src="/logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">稚晖的个人站</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -218,7 +217,8 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <pre><code>突然想起来还做了个小板子一直没时间玩,把资料先放出来...
-</code></pre><p><img src="/img/luapad1.jpg" alt="加载失败,请刷新"></p>
+</code></pre>
+<p><img src="/img/luapad1.jpg" alt="加载失败,请刷新"></p>
 <blockquote>
 <p>• Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本.</p>
 <p>• 关于这次做的板子,因为之前有看到过在STM32F4上运行Python的项目(叫做MicroPython,可以自行搜索),可以实现用Python语言来控制单片机.代码直接保存为文本即插即用,相当于可以在SD卡里储存很多小应用程序来选择运行,感觉这个点子还是很有意思的,所以打算做个类似的平台,Python已经有人做了,我就瞄准Lua啦.板子的硬件很早就弄好了,底层的驱动也基本完成,所有文件(STM32固件,原理图,PCB文件)都托管在coding上,有兴趣的可以自己去投板制作,这样既可以一起开发LuaPad,也可以单纯当做STM32的迷你开发板来用.板载的资源有电位器,RGBLed,MPU6050,SD卡槽,以及按键,大部分的IO都已经引出来,coding仓库地址在后文给出链接.</p>
@@ -226,7 +226,7 @@ var _hmt = _hmt || [];
 <p><img src="/img/luapad2.jpg" alt="加载失败,请刷新"></p>
 <p><img src="/img/luapad3.jpg" alt="加载失败,请刷新"></p>
 <p><img src="/img/luapad4.jpg" alt="加载失败,请刷新"></p>
-<p>coding仓库地址：<a href="https://git.coding.net/pengzhihui/LuaPad.git" target="_blank" rel="external">LuaPad</a></p>
+<p>coding仓库地址：<a target="_blank" rel="noopener" href="https://git.coding.net/pengzhihui/LuaPad.git">LuaPad</a></p>
 
       
 
@@ -429,7 +429,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 稚晖的个人站 | <a href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
+    		&copy; 2022 稚晖的个人站 | <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">蜀ICP备17038410号</a>  
     	</div>
       	<div class="footer-right">
       		<p>“唯有爱与科技不可辜负”</p>
@@ -529,11 +529,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -545,6 +545,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -553,15 +557,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -569,11 +565,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -589,11 +589,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">
